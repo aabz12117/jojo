@@ -9,7 +9,7 @@
     <meta property="og:description" content="تهنئة تخرج مميزة لجوري مع مؤثرات بصرية ورسالة من القلب.">
     <meta property="og:image" content="https://i.imgur.com/0y0y0y0.png">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;700;900&display=swap');
         
         * {
             margin: 0;
@@ -346,9 +346,9 @@
                 <circle cx="68" cy="6" r="3" fill="url(#goldReflection)" opacity="0.9"/>
                 <!-- النص "جوري" مع تأثيرات متقدمة -->
                 <g filter="url(#textGlow)">
-                  <text x="70" y="52" text-anchor="middle" font-size="26" font-family="'Cairo', 'Amiri', 'Arial Black', sans-serif" fill="url(#goldTextFill)" font-weight="900" style="letter-spacing:3px; paint-order: stroke fill;">جوري</text>
+                  <text x="70" y="52" text-anchor="middle" font-size="26" font-family="'Cairo', 'Amiri', sans-serif" fill="url(#goldTextFill)" font-weight="900" style="paint-order: stroke fill;">جوري</text>
                   <!-- حدود النص -->
-                  <text x="70" y="52" text-anchor="middle" font-size="26" font-family="'Cairo', 'Amiri', 'Arial Black', sans-serif" fill="none" stroke="url(#textStroke)" stroke-width="2" font-weight="900" style="letter-spacing:3px;">جوري</text>
+                  <text x="70" y="52" text-anchor="middle" font-size="26" font-family="'Cairo', 'Amiri', sans-serif" fill="none" stroke="url(#textStroke)" stroke-width="2" font-weight="900">جوري</text>
                 </g>
                 <!-- لمعة متحركة عبر النص -->
                 <rect x="40" y="38" width="60" height="22" fill="url(#movingShine)" opacity="0.7" mask="url(#textMask)">
@@ -441,7 +441,7 @@
                   <!-- قناع النص للمعة -->
                   <mask id="textMask">
                     <rect width="140" height="110" fill="black"/>
-                    <text x="70" y="52" text-anchor="middle" font-size="26" font-family="'Cairo', 'Amiri', 'Arial Black', sans-serif" fill="white" font-weight="900" style="letter-spacing:3px;">جوري</text>
+                    <text x="70" y="52" text-anchor="middle" font-size="26" font-family="'Cairo', 'Amiri', sans-serif" fill="white" font-weight="900">جوري</text>
                   </mask>
                   <!-- تأثير الإضاءة للنص -->
                   <filter id="textGlow" x="-20%" y="-20%" width="140%" height="140%">
@@ -776,7 +776,7 @@ window.addEventListener('DOMContentLoaded', function() {
           <line x1="60" y1="18" x2="60" y2="4" stroke="url(#goldRope)" stroke-width="4"/>
           <circle cx="60" cy="4" r="5" fill="url(#goldShine)" stroke="#bfa13a" stroke-width="1.2"/>
           <g filter="url(#textShadow)">
-            <text x="60" y="46" text-anchor="middle" font-size="22" font-family="'Cairo', 'Amiri', 'Arial Rounded MT Bold', Arial, sans-serif" fill="url(#goldText)" font-weight="bold" style="letter-spacing:2px;">جوري</text>
+            <text x="60" y="46" text-anchor="middle" font-size="22" font-family="'Cairo', 'Amiri', 'Arial Rounded MT Bold', Arial, sans-serif" fill="url(#goldText)" font-weight="bold">جوري</text>
             <rect x="35" y="33" width="50" height="18" fill="url(#shineGrad)" opacity="0.5">
               <animate attributeName="x" from="35" to="85" dur="2.2s" repeatCount="indefinite"/>
             </rect>
@@ -812,7 +812,7 @@ window.addEventListener('DOMContentLoaded', function() {
             </linearGradient>
             <filter id="textShadow" x="0" y="0" width="120" height="90">
               <feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#eab308" flood-opacity="0.5"/>
-            </filter>
+            </feDropShadow>
           </defs>
         </svg>
         `;
@@ -820,126 +820,129 @@ window.addEventListener('DOMContentLoaded', function() {
         // جهاز جيد أو ممتاز: القبعة الجديدة المتقدمة
         capContainer.innerHTML = `
         <svg width="140" height="110" viewBox="0 0 140 110" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="قبعة تخرج مكتوب عليها جوري">
-          <!-- ظل القبعة -->
-          <ellipse cx="70" cy="95" rx="45" ry="8" fill="rgba(0,0,0,0.1)"/>
-          <!-- قاعدة القبعة الذهبية -->
-          <rect x="25" y="62" width="90" height="20" rx="10" fill="url(#goldBase)" stroke="url(#goldStroke)" stroke-width="2"/>
-          <rect x="27" y="64" width="86" height="16" rx="8" fill="url(#goldHighlight)" opacity="0.8"/>
-          <!-- سطح القبعة الرئيسي -->
-          <polygon points="12,58 70,20 128,58 70,78" fill="url(#capSurface)" stroke="#1a1a1a" stroke-width="3"/>
-          <!-- طبقة علوية للمعان -->
-          <polygon points="15,55 70,25 125,55 70,72" fill="url(#capShine)" opacity="0.6"/>
-          <!-- الحبل الذهبي -->
-          <line x1="70" y1="20" x2="70" y2="8" stroke="url(#goldRope)" stroke-width="5" stroke-linecap="round"/>
-          <!-- الكرة العلوية مع تأثيرات -->
-          <circle cx="70" cy="8" r="7" fill="url(#goldOrb)" stroke="url(#goldStroke)" stroke-width="1.5"/>
-          <circle cx="68" cy="6" r="3" fill="url(#goldReflection)" opacity="0.9"/>
-          <!-- النص "جوري" مع تأثيرات متقدمة -->
-          <g filter="url(#textGlow)">
-            <text x="70" y="52" text-anchor="middle" font-size="26" font-family="'Cairo', 'Amiri', 'Arial Black', sans-serif" fill="url(#goldTextFill)" font-weight="900" style="letter-spacing:3px; paint-order: stroke fill;">جوري</text>
-            <text x="70" y="52" text-anchor="middle" font-size="26" font-family="'Cairo', 'Amiri', 'Arial Black', sans-serif" fill="none" stroke="url(#textStroke)" stroke-width="2" font-weight="900" style="letter-spacing:3px;">جوري</text>
-          </g>
-          <rect x="40" y="38" width="60" height="22" fill="url(#movingShine)" opacity="0.7" mask="url(#textMask)">
-            <animateTransform attributeName="transform" type="translate" values="-30,0; 100,0; -30,0" dur="3s" repeatCount="indefinite"/>
-          </rect>
-          <g opacity="0.8">
-            <polygon points="25,30 27,36 33,36 28,40 30,46 25,42 20,46 22,40 17,36 23,36" fill="#ffd700">
-              <animateTransform attributeName="transform" type="rotate" values="0 25 38; 360 25 38" dur="4s" repeatCount="indefinite"/>
-              <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-            </polygon>
-            <polygon points="115,25 117,31 123,31 118,35 120,41 115,37 110,41 112,35 107,31 113,31" fill="#ffd700">
-              <animateTransform attributeName="transform" type="rotate" values="0 115 33; -360 115 33" dur="5s" repeatCount="indefinite"/>
-              <animate attributeName="opacity" values="0.3;0.9;0.3" dur="1.8s" repeatCount="indefinite"/>
-            </polygon>
-            <polygon points="30,75 32,81 38,81 33,85 35,91 30,87 25,91 27,85 22,81 28,81" fill="#ffeb3b">
-              <animateTransform attributeName="transform" type="rotate" values="0 30 83; 360 30 83" dur="3.5s" repeatCount="indefinite"/>
-              <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2.2s" repeatCount="indefinite"/>
-            </polygon>
-            <polygon points="110,70 112,76 118,76 113,80 115,86 110,82 105,86 107,80 102,76 108,76" fill="#ffeb3b">
-              <animateTransform attributeName="transform" type="rotate" values="0 110 78; -360 110 78" dur="4.2s" repeatCount="indefinite"/>
-              <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite"/>
-            </polygon>
-          </g>
-          <defs>
-            <!-- تدرجات القاعدة الذهبية -->
-            <linearGradient id="goldBase" x1="25" y1="62" x2="115" y2="82" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#fff4a3"/>
-              <stop offset="0.3" stop-color="#ffd700"/>
-              <stop offset="0.7" stop-color="#b8860b"/>
-              <stop offset="1" stop-color="#fff4a3"/>
-            </linearGradient>
-            <linearGradient id="goldHighlight" x1="27" y1="64" x2="113" y2="80" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#ffffff" stop-opacity="0.9"/>
-              <stop offset="0.5" stop-color="#fff4a3" stop-opacity="0.7"/>
-              <stop offset="1" stop-color="#ffd700" stop-opacity="0.3"/>
-            </linearGradient>
-            <!-- تدرج سطح القبعة -->
-            <linearGradient id="capSurface" x1="70" y1="20" x2="70" y2="78" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#4a4a4a"/>
-              <stop offset="0.4" stop-color="#2d2d2d"/>
-              <stop offset="1" stop-color="#1a1a1a"/>
-            </linearGradient>
-            <linearGradient id="capShine" x1="40" y1="25" x2="100" y2="55" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#ffffff" stop-opacity="0.4"/>
-              <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.1"/>
-              <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
-            </linearGradient>
-            <!-- تدرجات الحبل والكرة -->
-            <linearGradient id="goldRope" x1="70" y1="20" x2="70" y2="8" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#ffd700"/>
-              <stop offset="0.5" stop-color="#fff4a3"/>
-              <stop offset="1" stop-color="#b8860b"/>
-            </linearGradient>
-            <radialGradient id="goldOrb" cx="70" cy="8" r="9" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#fff4a3"/>
-              <stop offset="0.4" stop-color="#ffd700"/>
-              <stop offset="0.8" stop-color="#b8860b"/>
-              <stop offset="1" stop-color="#8b7355"/>
-            </radialGradient>
-            <radialGradient id="goldReflection" cx="68" cy="6" r="4" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#ffffff"/>
-              <stop offset="0.6" stop-color="#fff4a3"/>
-              <stop offset="1" stop-color="#ffd700"/>
-            </radialGradient>
-            <!-- تدرجات النص -->
-            <linearGradient id="goldTextFill" x1="45" y1="52" x2="95" y2="52" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#fff4a3"/>
-              <stop offset="0.2" stop-color="#ffd700"/>
-              <stop offset="0.5" stop-color="#ffed4e"/>
-              <stop offset="0.8" stop-color="#ffd700"/>
-              <stop offset="1" stop-color="#fff4a3"/>
-            </linearGradient>
-            <linearGradient id="textStroke" x1="45" y1="52" x2="95" y2="52" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#b8860b"/>
-              <stop offset="0.5" stop-color="#8b7355"/>
-              <stop offset="1" stop-color="#b8860b"/>
-            </linearGradient>
-            <linearGradient id="goldStroke" x1="0" y1="0" x2="140" y2="110" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#b8860b"/>
-              <stop offset="1" stop-color="#8b7355"/>
-            </linearGradient>
-            <!-- اللمعة المتحركة -->
-            <linearGradient id="movingShine" x1="0" y1="0" x2="60" y2="0" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#ffffff" stop-opacity="0"/>
-              <stop offset="0.3" stop-color="#ffffff" stop-opacity="0.8"/>
-              <stop offset="0.7" stop-color="#fff4a3" stop-opacity="0.9"/>
-              <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
-            </linearGradient>
-            <!-- قناع النص للمعة -->
-            <mask id="textMask">
-              <rect width="140" height="110" fill="black"/>
-              <text x="70" y="52" text-anchor="middle" font-size="26" font-family="'Cairo', 'Amiri', 'Arial Black', sans-serif" fill="white" font-weight="900" style="letter-spacing:3px;">جوري</text>
-            </mask>
-            <!-- تأثير الإضاءة للنص -->
-            <filter id="textGlow" x="-20%" y="-20%" width="140%" height="140%">
-              <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
-              <feMerge> 
-                <feMergeNode in="coloredBlur"/>
-                <feMergeNode in="SourceGraphic"/>
-              </feMerge>
-            </filter>
-          </defs>
-        </svg>
+                <!-- ظل القبعة -->
+                <ellipse cx="70" cy="95" rx="45" ry="8" fill="rgba(0,0,0,0.1)"/>
+                <!-- قاعدة القبعة الذهبية -->
+                <rect x="25" y="62" width="90" height="20" rx="10" fill="url(#goldBase)" stroke="url(#goldStroke)" stroke-width="2"/>
+                <rect x="27" y="64" width="86" height="16" rx="8" fill="url(#goldHighlight)" opacity="0.8"/>
+                <!-- سطح القبعة الرئيسي -->
+                <polygon points="12,58 70,20 128,58 70,78" fill="url(#capSurface)" stroke="#1a1a1a" stroke-width="3"/>
+                <!-- طبقة علوية للمعان -->
+                <polygon points="15,55 70,25 125,55 70,72" fill="url(#capShine)" opacity="0.6"/>
+                <!-- الحبل الذهبي -->
+                <line x1="70" y1="20" x2="70" y2="8" stroke="url(#goldRope)" stroke-width="5" stroke-linecap="round"/>
+                <!-- الكرة العلوية مع تأثيرات -->
+                <circle cx="70" cy="8" r="7" fill="url(#goldOrb)" stroke="url(#goldStroke)" stroke-width="1.5"/>
+                <circle cx="68" cy="6" r="3" fill="url(#goldReflection)" opacity="0.9"/>
+                <!-- النص "جوري" مع تأثيرات متقدمة -->
+                <g filter="url(#textGlow)">
+                  <text x="70" y="52" text-anchor="middle" font-size="26" font-family="'Cairo', 'Amiri', sans-serif" fill="url(#goldTextFill)" font-weight="900" style="paint-order: stroke fill;">جوري</text>
+                  <!-- حدود النص -->
+                  <text x="70" y="52" text-anchor="middle" font-size="26" font-family="'Cairo', 'Amiri', sans-serif" fill="none" stroke="url(#textStroke)" stroke-width="2" font-weight="900">جوري</text>
+                </g>
+                <!-- لمعة متحركة عبر النص -->
+                <rect x="40" y="38" width="60" height="22" fill="url(#movingShine)" opacity="0.7" mask="url(#textMask)">
+                  <animateTransform attributeName="transform" type="translate" values="-30,0; 100,0; -30,0" dur="3s" repeatCount="indefinite"/>
+                </rect>
+                <!-- نجوم متلألئة حول القبعة -->
+                <g opacity="0.8">
+                  <polygon points="25,30 27,36 33,36 28,40 30,46 25,42 20,46 22,40 17,36 23,36" fill="#ffd700">
+                    <animateTransform attributeName="transform" type="rotate" values="0 25 38; 360 25 38" dur="4s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+                  </polygon>
+                  <polygon points="115,25 117,31 123,31 118,35 120,41 115,37 110,41 112,35 107,31 113,31" fill="#ffd700">
+                    <animateTransform attributeName="transform" type="rotate" values="0 115 33; -360 115 33" dur="5s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values="0.3;0.9;0.3" dur="1.8s" repeatCount="indefinite"/>
+                  </polygon>
+                  <polygon points="30,75 32,81 38,81 33,85 35,91 30,87 25,91 27,85 22,81 28,81" fill="#ffeb3b">
+                    <animateTransform attributeName="transform" type="rotate" values="0 30 83; 360 30 83" dur="3.5s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2.2s" repeatCount="indefinite"/>
+                  </polygon>
+                  <polygon points="110,70 112,76 118,76 113,80 115,86 110,82 105,86 107,80 102,76 108,76" fill="#ffeb3b">
+                    <animateTransform attributeName="transform" type="rotate" values="0 110 78; -360 110 78" dur="4.2s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite"/>
+                  </polygon>
+                </g>
+                <defs>
+                  <!-- تدرجات القاعدة الذهبية -->
+                  <linearGradient id="goldBase" x1="25" y1="62" x2="115" y2="82" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#fff4a3"/>
+                    <stop offset="0.3" stop-color="#ffd700"/>
+                    <stop offset="0.7" stop-color="#b8860b"/>
+                    <stop offset="1" stop-color="#fff4a3"/>
+                  </linearGradient>
+                  <linearGradient id="goldHighlight" x1="27" y1="64" x2="113" y2="80" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#ffffff" stop-opacity="0.9"/>
+                    <stop offset="0.5" stop-color="#fff4a3" stop-opacity="0.7"/>
+                    <stop offset="1" stop-color="#ffd700" stop-opacity="0.3"/>
+                  </linearGradient>
+                  <!-- تدرج سطح القبعة -->
+                  <linearGradient id="capSurface" x1="70" y1="20" x2="70" y2="78" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#4a4a4a"/>
+                    <stop offset="0.4" stop-color="#2d2d2d"/>
+                    <stop offset="1" stop-color="#1a1a1a"/>
+                  </linearGradient>
+                  <linearGradient id="capShine" x1="40" y1="25" x2="100" y2="55" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#ffffff" stop-opacity="0.4"/>
+                    <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.1"/>
+                    <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+                  </linearGradient>
+                  <!-- تدرجات الحبل والكرة -->
+                  <linearGradient id="goldRope" x1="70" y1="20" x2="70" y2="8" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#ffd700"/>
+                    <stop offset="0.5" stop-color="#fff4a3"/>
+                    <stop offset="1" stop-color="#b8860b"/>
+                  </linearGradient>
+                  <radialGradient id="goldOrb" cx="70" cy="8" r="9" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#fff4a3"/>
+                    <stop offset="0.4" stop-color="#ffd700"/>
+                    <stop offset="0.8" stop-color="#b8860b"/>
+                    <stop offset="1" stop-color="#8b7355"/>
+                  </radialGradient>
+                  <radialGradient id="goldReflection" cx="68" cy="6" r="4" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#ffffff"/>
+                    <stop offset="0.6" stop-color="#fff4a3"/>
+                    <stop offset="1" stop-color="#ffd700"/>
+                  </radialGradient>
+                  <!-- تدرجات النص -->
+                  <linearGradient id="goldTextFill" x1="45" y1="52" x2="95" y2="52" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#fff4a3"/>
+                    <stop offset="0.2" stop-color="#ffd700"/>
+                    <stop offset="0.5" stop-color="#ffed4e"/>
+                    <stop offset="0.8" stop-color="#ffd700"/>
+                    <stop offset="1" stop-color="#fff4a3"/>
+                  </linearGradient>
+                  <linearGradient id="textStroke" x1="45" y1="52" x2="95" y2="52" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#b8860b"/>
+                    <stop offset="0.5" stop-color="#8b7355"/>
+                    <stop offset="1" stop-color="#b8860b"/>
+                  </linearGradient>
+                  <linearGradient id="goldStroke" x1="0" y1="0" x2="140" y2="110" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#b8860b"/>
+                    <stop offset="1" stop-color="#8b7355"/>
+                  </linearGradient>
+                  <!-- اللمعة المتحركة -->
+                  <linearGradient id="movingShine" x1="0" y1="0" x2="60" y2="0" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#ffffff" stop-opacity="0"/>
+                    <stop offset="0.3" stop-color="#ffffff" stop-opacity="0.8"/>
+                    <stop offset="0.7" stop-color="#fff4a3" stop-opacity="0.9"/>
+                    <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+                  </linearGradient>
+                  <!-- قناع النص للمعة -->
+                  <mask id="textMask">
+                    <rect width="140" height="110" fill="black"/>
+                    <text x="70" y="52" text-anchor="middle" font-size="26" font-family="'Cairo', 'Amiri', sans-serif" fill="white" font-weight="900">جوري</text>
+                  </mask>
+                  <!-- تأثير الإضاءة للنص -->
+                  <filter id="textGlow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                    <feMerge> 
+                      <feMergeNode in="coloredBlur"/>
+                      <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                  </filter>
+                </defs>
+              </svg>
         `;
     }
 });
