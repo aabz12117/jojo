@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مبروك التخرج يا جوجو 🎓</title>
+    <meta name="description" content="تهنئة تخرج مميزة لجوجو مع مؤثرات بصرية جميلة ورسالة من القلب.">
+    <meta property="og:title" content="مبروك الت graduation يا جوجو 🎓">
+    <meta property="og:description" content="تهنئة تخرج مميزة لجوجو مع مؤثرات بصرية ورسالة من القلب.">
+    <meta property="og:image" content="https://i.imgur.com/0y0y0y0.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --main-pink: #ff69b4;
+            --main-dark-pink: #d63384;
+            --main-light-pink: #fff0f5;
+            --main-gradient: linear-gradient(45deg, #ffb6c1, #ffc0cb, #fff0f5, #ffe4e1);
+        }
+        
+        body {
+            font-family: 'Amiri', serif;
+            background: var(--main-gradient);
+            min-height: 100vh;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+        
+        .screen {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .hidden {
+            display: none !important;
+        }
+        
+        /* شاشة البطاقة الأولى */
+        .gift-card {
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(255, 105, 180, 0.3);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            max-width: 400px;
+            width: 100%;
+            border: 3px solid var(--main-pink);
+            animation: shake 2.5s infinite;
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            10%, 30%, 50%, 70%, 90% { transform: translateX(-6px); }
+            20%, 40%, 60%, 80% { transform: translateX(6px); }
+        }
+        
+        .gift-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .gift-emoji {
+            font-size: 80px;
+            margin-bottom: 20px;
+            display: block;
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .gift-text {
+            font-size: 32px;
+            color: var(--main-dark-pink);
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        /* شاشة التهنئة */
+        .celebration-card {
+            background: white;
+            border-radius: 25px;
+            padding: 50px 40px;
+            text-align: center;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+            max-width: 700px;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            animation: glow 3s infinite;
+        }
+        
+        @keyframes glow {
+            0% { box-shadow: 0 0 15px rgba(255, 105, 180, 0.4); }
+            50% { box-shadow: 0 0 30px rgba(255, 105, 180, 0.7); }
+            100% { box-shadow: 0 0 15px rgba(255, 105, 180, 0.4); }
+        }
+        
+        .main-title {
+            font-size: 42px;
+            color: var(--main-dark-pink);
+            margin-bottom: 30px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            line-height: 1.4;
+        }
+        
+        .subtitle {
+            font-size: 32px;
+            color: #e91e63;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+        
+        .apology-box {
+            background: var(--main-light-pink);
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 40px;
+            border-left: 5px solid var(--main-pink);
+            box-shadow: 0 10px 20px rgba(255, 105, 180, 0.1);
+        }
+        
+        .apology-text {
+            font-size: 20px;
+            color: #666;
+            line-height: 1.8;
+            font-style: italic;
+        }
+        
+        .apology-text span {
+          display: inline-block;
+          opacity: 0;
+          animation: fadeText 1s ease-in forwards;
+          animation-delay: 0.7s;
+        }
+        @keyframes fadeText {
+          from { opacity: 0; transform: translateY(10px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .replay-button {
+            margin-top: 40px;
+            padding: 15px 25px;
+            font-size: 18px;
+            background: linear-gradient(45deg, #ff69b4, #e91e63);
+            color: white;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            font-family: 'Amiri', serif;
+            font-weight: bold;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 #ff69b488; }
+            70% { box-shadow: 0 0 0 10px #ff69b400; }
+            100% { box-shadow: 0 0 0 0 #ff69b400; }
+        }
+        /* خلفية متحركة خفيفة */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            background: repeating-linear-gradient(120deg, #fff0f5 0 2px, transparent 2px 40px);
+            opacity: 0.2;
+            z-index: 0;
+            pointer-events: none;
+            animation: bgmove 10s linear infinite;
+        }
+        @keyframes bgmove {
+            0% { background-position: 0 0; }
+            100% { background-position: 200px 200px; }
+        }
+        
+        /* تأثيرات الجسيمات */
+        .particle {
+            position: fixed;
+            pointer-events: none;
+            z-index: 1000;
+            font-size: 24px;
+        }
+        
+        .heart {
+            color: var(--main-pink);
+            animation: fall 4s linear infinite;
+        }
+        
+        .confetti {
+            animation: fall 3s linear infinite;
+        }
+        
+        @keyframes fall {
+            0% {
+                transform: translateY(-100px) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* تأثير الانفجار */
+        .boom {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            transition: transform 0.5s ease;
+            z-index: 2000;
+            font-size: 100px;
+            pointer-events: none;
+        }
+        
+        /* سطرين التهنئة بشكل أكبر وجمالي */
+        .congrats-line {
+          display: block;
+          font-size: 2.6rem;
+          font-weight: bold;
+          background: linear-gradient(90deg, #ff69b4 10%, #ffd700 50%, #ff69b4 90%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          margin: 14px 0 0 0;
+          letter-spacing: 2px;
+          text-shadow: 0 2px 12px #ffd70044, 0 1px 0 #fffbe6;
+          animation: congratsGradientMove 3s linear infinite;
+        }
+        @keyframes congratsGradientMove {
+          0% { background-position: 0% 50%; }
+          100% { background-position: 100% 50%; }
+        }
+        
+        /* للجوال */
+        @media (max-width: 768px) {
+            .gift-card {
+                padding: 40px 30px;
+            }
+            
+            .gift-text {
+                font-size: 24px;
+            }
+            
+            .gift-emoji {
+                font-size: 60px;
+            }
+            
+            .main-title {
+                font-size: 28px;
+            }
+            
+            .subtitle {
+                font-size: 22px;
+            }
+            
+            .apology-text {
+                font-size: 16px;
+            }
+            
+            .celebration-card {
+                padding: 30px 20px;
+            }
+            
+            .replay-button {
+                font-size: 16px;
+                padding: 12px 20px;
+            }
+        }
+        
+        /* تحسين الوصول: إضافة تباين أعلى للنصوص المهمة */
+        .main-title, .subtitle, .apology-text {
+            text-shadow: 1px 1px 6px #fff, 0 0 2px #d63384;
+        }
+        
+        /* تحسين الوصول: إضافة وصف بديل للعناصر التفاعلية */
+        .gift-card[tabindex="0"]:focus {
+            outline: 3px solid var(--main-pink);
+        }
+
+        .gold-underline {
+            width: 170px;
+            height: 7px;
+            margin: 0 auto 18px auto;
+            border-radius: 8px;
+            background: linear-gradient(90deg, #eab308 30%, #fffbe6 60%, #eab308 100%);
+            position: relative;
+            animation: goldmove 2.5s linear infinite;
+        }
+        @keyframes goldmove {
+            0% { box-shadow: 0 0 8px 2px #eab30888; }
+            50% { box-shadow: 0 0 18px 6px #fffbe6cc; }
+            100% { box-shadow: 0 0 8px 2px #eab30888; }
+        }
+    </style>
+</head>
+<body>
+    <!-- الشاشة الأولى: البطاقة -->
+    <div id="cardScreen" class="screen">
+        <div class="gift-card" onclick="showCelebration()" tabindex="0" aria-label="افتح التهنئة يا خريجة بالضغط أو زر الإدخال">
+            <span class="gift-emoji">🎓</span>
+            <div class="gift-text">اضغطي هنا يا جوجو</div>
+        </div>
+    </div>
+    
+    <!-- الشاشة الثانية: التهنئة -->
+    <div id="celebrationScreen" class="screen hidden">
+        <div class="celebration-card fade-in">
+            <!-- صورة قبعة تخرج SVG مع كلمة "جوجو" داخل القبعة -->
+            <div style="display:flex;justify-content:center;margin-bottom:30px;">
+              <svg width="140" height="110" viewBox="0 0 140 110" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="قبعة تخرج مكتوب عليها جوجو">
+                <!-- ظل القبعة -->
+                <ellipse cx="70" cy="95" rx="45" ry="8" fill="rgba(0,0,0,0.1)"/>
+                <!-- قاعدة القبعة الذهبية -->
+                <rect x="25" y="62" width="90" height="20" rx="10" fill="url(#goldBase)" stroke="url(#goldStroke)" stroke-width="2"/>
+                <rect x="27" y="64" width="86" height="16" rx="8" fill="url(#goldHighlight)" opacity="0.8"/>
+                <!-- سطح القبعة الرئيسي -->
+                <polygon points="12,58 70,20 128,58 70,78" fill="url(#capSurface)" stroke="#1a1a1a" stroke-width="3"/>
+                <!-- طبقة علوية للمعان -->
+                <polygon points="15,55 70,25 125,55 70,72" fill="url(#capShine)" opacity="0.6"/>
+                <!-- الحبل الذهبي -->
+                <line x1="70" y1="20" x2="70" y2="8" stroke="url(#goldRope)" stroke-width="5" stroke-linecap="round"/>
+                <!-- الكرة العلوية مع تأثيرات -->
+                <circle cx="70" cy="8" r="7" fill="url(#goldOrb)" stroke="url(#goldStroke)" stroke-width="1.5"/>
+                <circle cx="68" cy="6" r="3" fill="url(#goldReflection)" opacity="0.9"/>
+                <!-- النص "جوجو" مع تأثيرات متقدمة -->
+                <g filter="url(#textGlow)">
+                  <text x="70" y="52" text-anchor="middle" font-size="26" font-family="'Cairo', 'Amiri', 'Arial Black', sans-serif" fill="url(#goldTextFill)" font-weight="900" style="letter-spacing:3px; paint-order: stroke fill;">جوجو</text>
+                  <!-- حدود النص -->
+                  <text x="70" y="52" text-anchor="middle" font-size="26" font-family="'Cairo', 'Amiri', 'Arial Black', sans-serif" fill="none" stroke="url(#textStroke)" stroke-width="2" font-weight="900" style="letter-spacing:3px;">جوجو</text>
+                </g>
+                <!-- لمعة متحركة عبر النص -->
+                <rect x="40" y="38" width="60" height="22" fill="url(#movingShine)" opacity="0.7" mask="url(#textMask)">
+                  <animateTransform attributeName="transform" type="translate" values="-30,0; 100,0; -30,0" dur="3s" repeatCount="indefinite"/>
+                </rect>
+                <!-- نجوم متلألئة حول القبعة -->
+                <g opacity="0.8">
+                  <polygon points="25,30 27,36 33,36 28,40 30,46 25,42 20,46 22,40 17,36 23,36" fill="#ffd700">
+                    <animateTransform attributeName="transform" type="rotate" values="0 25 38; 360 25 38" dur="4s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+                  </polygon>
+                  <polygon points="115,25 117,31 123,31 118,35 120,41 115,37 110,41 112,35 107,31 113,31" fill="#ffd700">
+                    <animateTransform attributeName="transform" type="rotate" values="0 115 33; -360 115 33" dur="5s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values="0.3;0.9;0.3" dur="1.8s" repeatCount="indefinite"/>
+                  </polygon>
+                  <polygon points="30,75 32,81 38,81 33,85 35,91 30,87 25,91 27,85 22,81 28,81" fill="#ffeb3b">
+                    <animateTransform attributeName="transform" type="rotate" values="0 30 83; 360 30 83" dur="3.5s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2.2s" repeatCount="indefinite"/>
+                  </polygon>
+                  <polygon points="110,70 112,76 118,76 113,80 115,86 110,82 105,86 107,80 102,76 108,76" fill="#ffeb3b">
+                    <animateTransform attributeName="transform" type="rotate" values="0 110 78; -360 110 78" dur="4.2s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite"/>
+                  </polygon>
+                </g>
+                <defs>
+                  <!-- تدرجات القاعدة الذهبية -->
+                  <linearGradient id="goldBase" x1="25" y1="62" x2="115" y2="82" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#fff4a3"/>
+                    <stop offset="0.3" stop-color="#ffd700"/>
+                    <stop offset="0.7" stop-color="#b8860b"/>
+                    <stop offset="1" stop-color="#fff4a3"/>
+                  </linearGradient>
+                  <linearGradient id="goldHighlight" x1="27" y1="64" x2="113" y2="80" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#ffffff" stop-opacity="0.9"/>
+                    <stop offset="0.5" stop-color="#fff4a3" stop-opacity="0.7"/>
+                    <stop offset="1" stop-color="#ffd700" stop-opacity="0.3"/>
+                  </linearGradient>
+                  <!-- تدرج سطح القبعة -->
+                  <linearGradient id="capSurface" x1="70" y1="20" x2="70" y2="78" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#4a4a4a"/>
+                    <stop offset="0.4" stop-color="#2d2d2d"/>
+                    <stop offset="1" stop-color="#1a1a1a"/>
+                  </linearGradient>
+                  <linearGradient id="capShine" x1="40" y1="25" x2="100" y2="55" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#ffffff" stop-opacity="0.4"/>
+                    <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.1"/>
+                    <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+                  </linearGradient>
+                  <!-- تدرجات الحبل والكرة -->
+                  <linearGradient id="goldRope" x1="70" y1="20" x2="70" y2="8" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#ffd700"/>
+                    <stop offset="0.5" stop-color="#fff4a3"/>
+                    <stop offset="1" stop-color="#b8860b"/>
+                  </linearGradient>
+                  <radialGradient id="goldOrb" cx="70" cy="8" r="9" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#fff4a3"/>
+                    <stop offset="0.4" stop-color="#ffd700"/>
+                    <stop offset="0.8" stop-color="#b8860b"/>
+                    <stop offset="1" stop-color="#8b7355"/>
+                  </radialGradient>
+                  <radialGradient id="goldReflection" cx="68" cy="6" r="4" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#ffffff"/>
+                    <stop offset="0.6" stop-color="#fff4a3"/>
+                    <stop offset="1" stop-color="#ffd700"/>
+                  </radialGradient>
+                  <!-- تدرجات النص -->
+                  <linearGradient id="goldTextFill" x1="45" y1="52" x2="95" y2="52" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#fff4a3"/>
+                    <stop offset="0.2" stop-color="#ffd700"/>
+                    <stop offset="0.5" stop-color="#ffed4e"/>
+                    <stop offset="0.8" stop-color="#ffd700"/>
+                    <stop offset="1" stop-color="#fff4a3"/>
+                  </linearGradient>
+                  <linearGradient id="textStroke" x1="45" y1="52" x2="95" y2="52" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#b8860b"/>
+                    <stop offset="0.5" stop-color="#8b7355"/>
+                    <stop offset="1" stop-color="#b8860b"/>
+                  </linearGradient>
+                  <linearGradient id="goldStroke" x1="0" y1="0" x2="140" y2="110" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#b8860b"/>
+                    <stop offset="1" stop-color="#8b7355"/>
+                  </linearGradient>
+                  <!-- اللمعة المتحركة -->
+                  <linearGradient id="movingShine" x1="0" y1="0" x2="60" y2="0" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#ffffff" stop-opacity="0"/>
+                    <stop offset="0.3" stop-color="#ffffff" stop-opacity="0.8"/>
+                    <stop offset="0.7" stop-color="#fff4a3" stop-opacity="0.9"/>
+                    <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+                  </linearGradient>
+                  <!-- قناع النص للمعة -->
+                  <mask id="textMask">
+                    <rect width="140" height="110" fill="black"/>
+                    <text x="70" y="52" text-anchor="middle" font-size="26" font-family="'Cairo', 'Amiri', 'Arial Black', sans-serif" fill="white" font-weight="900" style="letter-spacing:3px;">جوجو</text>
+                  </mask>
+                  <!-- تأثير الإضاءة للنص -->
+                  <filter id="textGlow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                    <feMerge> 
+                      <feMergeNode in="coloredBlur"/>
+                      <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                  </filter>
+                </defs>
+              </svg>
+            </div>
+            <h1 class="main-title">🎓 مبروك التخرج </h1>
+            <div class="gold-underline"></div>
+            <h2 class="subtitle">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle;">
+                    <rect x="12" y="2" width="4" height="8" rx="2" fill="#ffd700"/>
+                    <circle cx="14" cy="14" r="3" fill="#ff69b4"/>
+                    <rect x="2" y="22" width="8" height="4" rx="2" fill="#00c853"/>
+                    <rect x="18" y="18" width="8" height="4" rx="2" fill="#2196f3"/>
+                </svg>
+                مبرووووووووووووووووك
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle;">
+                    <circle cx="7" cy="7" r="3" fill="#ffeb3b"/>
+                    <rect x="16" y="2" width="6" height="4" rx="2" fill="#ff69b4"/>
+                    <rect x="2" y="16" width="4" height="6" rx="2" fill="#00bcd4"/>
+                    <circle cx="21" cy="21" r="3" fill="#8bc34a"/>
+                </svg>
+            </h2>
+            
+            <div class="apology-box">
+                <p class="apology-text">
+                      عارف إن الهدية بسيطة لاكن والله كان ودي اعطيك شئ افضل بس هاذا الي قدرت عليه <br>
+                     <span>و اختي صارت خريجة ثانوي 🥳</span>
+                      <span>و حبيت اقول مبروووك 🎓</span>
+                </p>
+            </div>
+            
+            <!-- زر مشاركة التهنئة -->
+            <button class="replay-button" style="margin-right: 10px;" onclick="location.reload()" aria-label="إعادة عرض التهنئة">
+                🎉 شوف التهنئة مرة ثانية
+            </button>
+        </div>
+    </div>
+
+    <!-- عد تنازلي قبل ظهور شاشة التهنئة -->
+    <div id="countdownOverlay" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(255,255,255,0.85);z-index:3000;justify-content:center;align-items:center;font-size:60px;color:#d63384;font-family:'Amiri',serif;font-weight:bold;">
+        <span id="countdownNumber">3</span>
+    </div>
+
+    <!-- تحسين تحميل الصوت -->
+    <audio id="celebrationAudio" src="https://cdn.pixabay.com/audio/2022/07/26/audio_124bfa4c7b.mp3" preload="auto"></audio>
+
+    <script>
+        // إضافة صوت احتفالي عند ظهور شاشة التهنئة
+const celebrationAudio = document.getElementById('celebrationAudio');
+
+function showCelebration() {
+    // عد تنازلي قبل التهنئة
+    const overlay = document.getElementById('countdownOverlay');
+    const number = document.getElementById('countdownNumber');
+    let count = 3;
+    overlay.style.display = 'flex';
+    number.textContent = count;
+    const countdownInterval = setInterval(() => {
+        count--;
+        if (count > 0) {
+            number.textContent = count;
+        } else {
+            clearInterval(countdownInterval);
+            overlay.style.display = 'none';
+            // إضافة تأثير الانفجار
+            const boom = document.createElement('div');
+            boom.className = 'boom';
+            boom.innerHTML = '🎉';
+            document.body.appendChild(boom);
+            setTimeout(() => {
+                boom.style.transform = 'translate(-50%, -50%) scale(1.8)';
+            }, 10);
+            // تشغيل الصوت قبل ظهور الشاشة الثانية بـ 0.3 ثانية
+            celebrationAudio.currentTime = 0;
+            celebrationAudio.play();
+            setTimeout(() => {
+                document.getElementById('cardScreen').classList.add('hidden');
+                document.getElementById('celebrationScreen').classList.remove('hidden');
+                particleManager.startHeartsFall();
+                particleManager.startConfettiFall();
+            }, 300);
+            setTimeout(() => {
+                boom.remove();
+            }, 1000);
+        }
+    }, 1000);
+}
+
+// SVGs للقلب والكونفيتي
+const SVGs = {
+    heart: [
+        `<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 29s-9.5-7.2-12.5-12C1.1 13.1 2.6 8.5 7 8.5c2.2 0 4.1 1.5 5 3.6C13.9 10 15.8 8.5 18 8.5c4.4 0 5.9 4.6 3.5 8.5C25.5 21.8 16 29 16 29z" fill="#ff69b4" stroke="#d63384" stroke-width="1.5"/></svg>`,
+        `<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 28s-8.5-6.5-11-11c-2.2-3.7-.7-8.5 3.5-8.5 1.8 0 3.5 1.2 4.5 3C14 9.7 15.7 8.5 17.5 8.5c4.2 0 5.7 4.8 3.5 8.5-2.5 4.5-11 11-11 11z" fill="#e91e63" stroke="#d63384" stroke-width="1.2"/></svg>`
+    ],
+    confetti: [
+        `<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="12" y="2" width="4" height="8" rx="2" fill="#ffd700"/><circle cx="14" cy="14" r="3" fill="#ff69b4"/><rect x="2" y="22" width="8" height="4" rx="2" fill="#00c853"/><rect x="18" y="18" width="8" height="4" rx="2" fill="#2196f3"/></svg>`,
+        `<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="3" fill="#ffeb3b"/><rect x="16" y="2" width="6" height="4" rx="2" fill="#ff69b4"/><rect x="2" y="16" width="4" height="6" rx="2" fill="#00bcd4"/><circle cx="21" cy="21" r="3" fill="#8bc34a"/></svg>`
+    ]
+};
+
+// كلاس للجسيمات
+class ParticleManager {
+    constructor() {
+        this.heartAnimationId = null;
+        this.confettiAnimationId = null;
+        this.runningHearts = false;
+        this.runningConfetti = false;
+    }
+    createParticle(type) {
+        const particle = document.createElement('div');
+        particle.className = `particle ${type}`;
+        if (SVGs[type]) {
+            const arr = SVGs[type];
+            particle.innerHTML = arr[Math.floor(Math.random() * arr.length)];
+        }
+        particle.style.left = Math.random() * window.innerWidth + 'px';
+        particle.style.top = '-50px';
+        particle.style.animationDuration = (Math.random() * 2 + 3) + 's';
+        document.body.appendChild(particle);
+        setTimeout(() => {
+            if (particle.parentNode) {
+                particle.parentNode.removeChild(particle);
+            }
+        }, 5000);
+    }
+    animateParticles(type) {
+        if ((type === 'heart' && !this.runningHearts) || (type === 'confetti' && !this.runningConfetti)) return;
+        if (!document.getElementById('celebrationScreen') || document.getElementById('celebrationScreen').classList.contains('hidden')) return;
+        this.createParticle(type);
+        if (type === 'heart') {
+            this.heartAnimationId = requestAnimationFrame(() => setTimeout(() => this.animateParticles('heart'), 800));
+        } else {
+            this.confettiAnimationId = requestAnimationFrame(() => setTimeout(() => this.animateParticles('confetti'), 400));
+        }
+    }
+    stopParticles() {
+        this.runningHearts = false;
+        this.runningConfetti = false;
+               if (this.heartAnimationId) cancelAnimationFrame(this.heartAnimationId);
+        if (this.confettiAnimationId) cancelAnimationFrame(this.confettiAnimationId);
+    }
+    startHeartsFall() {
+        this.runningHearts = true;
+        let initialBurst = 15;
+        for (let i = 0; i < initialBurst; i++) {
+            setTimeout(() => {
+                this.createParticle('heart');
+            }, i * 100);
+        }
+        this.animateParticles('heart');
+    }
+    startConfettiFall() {
+        this.runningConfetti = true;
+        let initialBurst = 20;
+        for (let i = 0; i < initialBurst; i++) {
+            setTimeout(() => {
+                this.createParticle('confetti');
+            }, i * 50);
+        }
+        this.animateParticles('confetti');
+    }
+}
+
+const particleManager = new ParticleManager();
+
+// تحسين الوصول: إضافة aria-labels وتوضيح التباين
+// تمت إضافة aria-label للأزرار سابقًا
+// إضافة تعليقات توضيحية في الجافاسكريبت
+
+function createParticle(type) {
+            const particle = document.createElement('div');
+            particle.className = `particle ${type}`;
+            
+            if (type === 'heart') {
+                particle.innerHTML = ['💖', '💕', '💗', '💘', '❤️'][Math.floor(Math.random() * 5)];
+            } else if (type === 'confetti') {
+                particle.innerHTML = ['🎉', '✨', '💫', '🌟', '⭐'][Math.floor(Math.random() * 5)];
+                particle.style.fontSize = '20px';
+            }
+            
+            particle.style.left = Math.random() * window.innerWidth + 'px';
+            particle.style.top = '-50px';
+            particle.style.animationDuration = (Math.random() * 2 + 3) + 's';
+            
+            document.body.appendChild(particle);
+            
+            // إزالة الجسيم بعد انتهاء الأنيمشن
+            setTimeout(() => {
+                if (particle.parentNode) {
+                    particle.parentNode.removeChild(particle);
+                }
+            }, 5000);
+        }
+        
+        // تحسين: تنظيم الجسيمات واستخدام requestAnimationFrame بدلاً من setInterval
+let heartAnimationId = null;
+let confettiAnimationId = null;
+let runningHearts = false;
+let runningConfetti = false;
+
+function animateParticles(type) {
+    if ((type === 'heart' && !runningHearts) || (type === 'confetti' && !runningConfetti)) return;
+    if (!document.getElementById('celebrationScreen') || document.getElementById('celebrationScreen').classList.contains('hidden')) return;
+    createParticle(type);
+    if (type === 'heart') {
+        heartAnimationId = requestAnimationFrame(() => setTimeout(() => animateParticles('heart'), 800));
+    } else {
+        confettiAnimationId = requestAnimationFrame(() => setTimeout(() => animateParticles('confetti'), 400));
+    }
+}
+
+function stopParticles() {
+    runningHearts = false;
+    runningConfetti = false;
+    if (heartAnimationId) cancelAnimationFrame(heartAnimationId);
+    if (confettiAnimationId) cancelAnimationFrame(confettiAnimationId);
+}
+
+function startHeartsFall() {
+    runningHearts = true;
+    // انفجار أولي من القلوب
+    let initialBurst = 15;
+    for (let i = 0; i < initialBurst; i++) {
+        setTimeout(() => {
+            createParticle('heart');
+        }, i * 100);
+    }
+    // تساقط مستمر
+    animateParticles('heart');
+}
+
+function startConfettiFall() {
+    runningConfetti = true;
+    // انفجار أولي من الكونفيتي
+    let initialBurst = 20;
+    for (let i = 0; i < initialBurst; i++) {
+        setTimeout(() => {
+            createParticle('confetti');
+        }, i * 50);
+    }
+    // تساقط مستمر
+    animateParticles('confetti');
+}
+
+// أوقف المؤثرات عند إخفاء شاشة التهنئة (مثلاً عند إعادة التشغيل)
+document.addEventListener('visibilitychange', () => {
+    if (document.hidden || document.getElementById('celebrationScreen').classList.contains('hidden')) {
+        particleManager.stopParticles();
+    }
+});
+
+
+
+
+// دعم فتح البطاقة بزر الإدخال/المسافة
+document.querySelector('.gift-card').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        showCelebration();
+    }
+});
+
+// إزالة زر إيقاف/تشغيل المؤثرات من شاشة التهنئة
+
+/* تقليل كمية الجسيمات حسب قوة الجهاز */
+function isLowEndDevice() {
+    return navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 4;
+}
+if (isLowEndDevice()) {
+    ParticleManager.prototype.startHeartsFall = function() {
+        this.runningHearts = true;
+        let initialBurst = 7;
+        for (let i = 0; i < initialBurst; i++) {
+            setTimeout(() => {
+                this.createParticle('heart');
+            }, i * 150);
+        }
+        this.animateParticles('heart');
+    };
+    ParticleManager.prototype.startConfettiFall = function() {
+        this.runningConfetti = true;
+        let initialBurst = 10;
+        for (let i = 0; i < initialBurst; i++) {
+            setTimeout(() => {
+                this.createParticle('confetti');
+            }, i * 100);
+        }
+        this.animateParticles('confetti');
+    };
+}
+
+/* تحسين قوة الجهاز */
+function isLowEndDevice() {
+    // جهاز ضعيف: أقل من 4 أنوية أو ذاكرة أقل من 3GB أو لا يدعم requestIdleCallback
+    const lowCpu = navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 4;
+    const lowRam = navigator.deviceMemory && navigator.deviceMemory <= 3;
+    const noIdle = typeof window.requestIdleCallback !== 'function';
+    return lowCpu || lowRam || noIdle;
+}
+
+function isGoodDevice() {
+    // جهاز جيد: 4-6 أنوية أو ذاكرة 4GB أو أكثر
+    const cpu = navigator.hardwareConcurrency || 4;
+    const ram = navigator.deviceMemory || 4;
+    return (cpu >= 4 && ram >= 4);
+}
+
+function isExcellentDevice() {
+    // جهاز ممتاز: 6 أنوية أو أكثر وذاكرة 6GB أو أكثر
+    const cpu = navigator.hardwareConcurrency || 4;
+    const ram = navigator.deviceMemory || 4;
+    return (cpu >= 6 && ram >= 6);
+}
+
+// استبدال القبعة حسب قوة الجهاز
+window.addEventListener('DOMContentLoaded', function() {
+    var capContainer = document.querySelector('.celebration-card > div');
+    if (!capContainer) return;
+    if (isLowEndDevice()) {
+        // قبعة SVG القديمة (أبسط)
+        capContainer.innerHTML = `
+        <svg width="120" height="90" viewBox="0 0 120 90" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="قبعة تخرج مكتوب عليها جوجو" style="filter: drop-shadow(0 4px 12px #eab30855);">
+          <rect x="22" y="54" width="76" height="16" rx="7" fill="url(#goldBar)" stroke="#bfa13a" stroke-width="2"/>
+          <polygon points="10,50 60,18 110,50 60,68" fill="url(#capGrad)" stroke="#222" stroke-width="2.5"/>
+          <line x1="60" y1="18" x2="60" y2="4" stroke="url(#goldRope)" stroke-width="4"/>
+          <circle cx="60" cy="4" r="5" fill="url(#goldShine)" stroke="#bfa13a" stroke-width="1.2"/>
+          <g filter="url(#textShadow)">
+            <text x="60" y="46" text-anchor="middle" font-size="22" font-family="'Cairo', 'Amiri', 'Arial Rounded MT Bold', Arial, sans-serif" fill="url(#goldText)" font-weight="bold" style="letter-spacing:2px;">جوجو</text>
+            <rect x="35" y="33" width="50" height="18" fill="url(#shineGrad)" opacity="0.5">
+              <animate attributeName="x" from="35" to="85" dur="2.2s" repeatCount="indefinite"/>
+            </rect>
+          </g>
+          <defs>
+            <linearGradient id="goldBar" x1="22" y1="54" x2="98" y2="70" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#ffe066"/>
+              <stop offset="0.5" stop-color="#eab308"/>
+              <stop offset="1" stop-color="#fffbe6"/>
+            </linearGradient>
+            <linearGradient id="capGrad" x1="60" y1="18" x2="60" y2="68" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#444"/>
+              <stop offset="1" stop-color="#222"/>
+            </linearGradient>
+            <linearGradient id="goldRope" x1="60" y1="18" x2="60" y2="4" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#ffe066"/>
+              <stop offset="1" stop-color="#eab308"/>
+            </linearGradient>
+            <radialGradient id="goldShine" cx="60" cy="4" r="7" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#fffbe6"/>
+              <stop offset="0.5" stop-color="#ffe066"/>
+              <stop offset="1" stop-color="#eab308"/>
+            </radialGradient>
+            <linearGradient id="goldText" x1="40" y1="46" x2="80" y2="46" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#fffbe6"/>
+              <stop offset="0.3" stop-color="#ffe066"/>
+              <stop offset="0.7" stop-color="#eab308"/>
+              <stop offset="1" stop-color="#fffbe6"/>
+            </linearGradient>
+            <linearGradient id="shineGrad" x1="0" y1="0" x2="50" y2="0" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#fff" stop-opacity="0.7"/>
+              <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+            </linearGradient>
+            <filter id="textShadow" x="0" y="0" width="120" height="90">
+              <feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#eab308" flood-opacity="0.5"/>
+            </filter>
+          </defs>
+        </svg>
+        `;
+    } else {
+        // جهاز جيد أو ممتاز: القبعة الجديدة المتقدمة
+        capContainer.innerHTML = `
+        <svg width="140" height="110" viewBox="0 0 140 110" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="قبعة تخرج مكتوب عليها جوجو">
+          <!-- ظل القبعة -->
+          <ellipse cx="70" cy="95" rx="45" ry="8" fill="rgba(0,0,0,0.1)"/>
+          <!-- قاعدة القبعة الذهبية -->
+          <rect x="25" y="62" width="90" height="20" rx="10" fill="url(#goldBase)" stroke="url(#goldStroke)" stroke-width="2"/>
+          <rect x="27" y="64" width="86" height="16" rx="8" fill="url(#goldHighlight)" opacity="0.8"/>
+          <!-- سطح القبعة الرئيسي -->
+          <polygon points="12,58 70,20 128,58 70,78" fill="url(#capSurface)" stroke="#1a1a1a" stroke-width="3"/>
+          <!-- طبقة علوية للمعان -->
+          <polygon points="15,55 70,25 125,55 70,72" fill="url(#capShine)" opacity="0.6"/>
+          <!-- الحبل الذهبي -->
+          <line x1="70" y1="20" x2="70" y2="8" stroke="url(#goldRope)" stroke-width="5" stroke-linecap="round"/>
+          <!-- الكرة العلوية مع تأثيرات -->
+          <circle cx="70" cy="8" r="7" fill="url(#goldOrb)" stroke="url(#goldStroke)" stroke-width="1.5"/>
+          <circle cx="68" cy="6" r="3" fill="url(#goldReflection)" opacity="0.9"/>
+          <!-- النص "جوجو" مع تأثيرات متقدمة -->
+          <g filter="url(#textGlow)">
+            <text x="70" y="52" text-anchor="middle" font-size="26" font-family="'Cairo', 'Amiri', 'Arial Black', sans-serif" fill="url(#goldTextFill)" font-weight="900" style="letter-spacing:3px; paint-order: stroke fill;">جوجو</text>
+            <text x="70" y="52" text-anchor="middle" font-size="26" font-family="'Cairo', 'Amiri', 'Arial Black', sans-serif" fill="none" stroke="url(#textStroke)" stroke-width="2" font-weight="900" style="letter-spacing:3px;">جوجو</text>
+          </g>
+          <rect x="40" y="38" width="60" height="22" fill="url(#movingShine)" opacity="0.7" mask="url(#textMask)">
+            <animateTransform attributeName="transform" type="translate" values="-30,0; 100,0; -30,0" dur="3s" repeatCount="indefinite"/>
+          </rect>
+          <g opacity="0.8">
+            <polygon points="25,30 27,36 33,36 28,40 30,46 25,42 20,46 22,40 17,36 23,36" fill="#ffd700">
+              <animateTransform attributeName="transform" type="rotate" values="0 25 38; 360 25 38" dur="4s" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+            </polygon>
+            <polygon points="115,25 117,31 123,31 118,35 120,41 115,37 110,41 112,35 107,31 113,31" fill="#ffd700">
+              <animateTransform attributeName="transform" type="rotate" values="0 115 33; -360 115 33" dur="5s" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values="0.3;0.9;0.3" dur="1.8s" repeatCount="indefinite"/>
+            </polygon>
+            <polygon points="30,75 32,81 38,81 33,85 35,91 30,87 25,91 27,85 22,81 28,81" fill="#ffeb3b">
+              <animateTransform attributeName="transform" type="rotate" values="0 30 83; 360 30 83" dur="3.5s" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2.2s" repeatCount="indefinite"/>
+            </polygon>
+            <polygon points="110,70 112,76 118,76 113,80 115,86 110,82 105,86 107,80 102,76 108,76" fill="#ffeb3b">
+              <animateTransform attributeName="transform" type="rotate" values="0 110 78; -360 110 78" dur="4.2s" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite"/>
+            </polygon>
+          </g>
+          <defs>
+            <!-- تدرجات القاعدة الذهبية -->
+            <linearGradient id="goldBase" x1="25" y1="62" x2="115" y2="82" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#fff4a3"/>
+              <stop offset="0.3" stop-color="#ffd700"/>
+              <stop offset="0.7" stop-color="#b8860b"/>
+              <stop offset="1" stop-color="#fff4a3"/>
+            </linearGradient>
+            <linearGradient id="goldHighlight" x1="27" y1="64" x2="113" y2="80" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#ffffff" stop-opacity="0.9"/>
+              <stop offset="0.5" stop-color="#fff4a3" stop-opacity="0.7"/>
+              <stop offset="1" stop-color="#ffd700" stop-opacity="0.3"/>
+            </linearGradient>
+            <!-- تدرج سطح القبعة -->
+            <linearGradient id="capSurface" x1="70" y1="20" x2="70" y2="78" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#4a4a4a"/>
+              <stop offset="0.4" stop-color="#2d2d2d"/>
+              <stop offset="1" stop-color="#1a1a1a"/>
+            </linearGradient>
+            <linearGradient id="capShine" x1="40" y1="25" x2="100" y2="55" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#ffffff" stop-opacity="0.4"/>
+              <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.1"/>
+              <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+            </linearGradient>
+            <!-- تدرجات الحبل والكرة -->
+            <linearGradient id="goldRope" x1="70" y1="20" x2="70" y2="8" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#ffd700"/>
+              <stop offset="0.5" stop-color="#fff4a3"/>
+              <stop offset="1" stop-color="#b8860b"/>
+            </linearGradient>
+            <radialGradient id="goldOrb" cx="70" cy="8" r="9" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#fff4a3"/>
+              <stop offset="0.4" stop-color="#ffd700"/>
+              <stop offset="0.8" stop-color="#b8860b"/>
+              <stop offset="1" stop-color="#8b7355"/>
+            </radialGradient>
+            <radialGradient id="goldReflection" cx="68" cy="6" r="4" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#ffffff"/>
+              <stop offset="0.6" stop-color="#fff4a3"/>
+              <stop offset="1" stop-color="#ffd700"/>
+            </radialGradient>
+            <!-- تدرجات النص -->
+            <linearGradient id="goldTextFill" x1="45" y1="52" x2="95" y2="52" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#fff4a3"/>
+              <stop offset="0.2" stop-color="#ffd700"/>
+              <stop offset="0.5" stop-color="#ffed4e"/>
+              <stop offset="0.8" stop-color="#ffd700"/>
+              <stop offset="1" stop-color="#fff4a3"/>
+            </linearGradient>
+            <linearGradient id="textStroke" x1="45" y1="52" x2="95" y2="52" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#b8860b"/>
+              <stop offset="0.5" stop-color="#8b7355"/>
+              <stop offset="1" stop-color="#b8860b"/>
+            </linearGradient>
+            <linearGradient id="goldStroke" x1="0" y1="0" x2="140" y2="110" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#b8860b"/>
+              <stop offset="1" stop-color="#8b7355"/>
+            </linearGradient>
+            <!-- اللمعة المتحركة -->
+            <linearGradient id="movingShine" x1="0" y1="0" x2="60" y2="0" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#ffffff" stop-opacity="0"/>
+              <stop offset="0.3" stop-color="#ffffff" stop-opacity="0.8"/>
+              <stop offset="0.7" stop-color="#fff4a3" stop-opacity="0.9"/>
+              <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+            </linearGradient>
+            <!-- قناع النص للمعة -->
+            <mask id="textMask">
+              <rect width="140" height="110" fill="black"/>
+              <text x="70" y="52" text-anchor="middle" font-size="26" font-family="'Cairo', 'Amiri', 'Arial Black', sans-serif" fill="white" font-weight="900" style="letter-spacing:3px;">جوجو</text>
+            </mask>
+            <!-- تأثير الإضاءة للنص -->
+            <filter id="textGlow" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+              <feMerge> 
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+          </defs>
+        </svg>
+        `;
+    }
+});
+
+    </script>
+</body>
+</html>
